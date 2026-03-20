@@ -14,12 +14,12 @@ export default function Home() {
           Используем только сертифицированные Эко-средства.
         </p>
         
-        <a 
-          href="#wizard" 
-          className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold px-8 py-4 rounded-lg shadow-md transition-all active:scale-95"
-        >
-          Оформить заказ сейчас
-        </a>
+      <a 
+  href="#" 
+  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+>
+  Оформить заказ сейчас
+</a>
 
         {/* Заглушка для Marquee из дока */}
         <div className="mt-20 w-full border-y border-[#E2E8F0] py-8 overflow-hidden bg-[#F8FAFC]">
