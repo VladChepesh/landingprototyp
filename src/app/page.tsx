@@ -2,31 +2,34 @@ import Header from '../components/Header';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FFFFFF]">
+    <main className="min-h-screen bg-white">
       <Header />
       
-      {/* Hero Section согласно док-ту */}
-      <section className="max-w-[1280px] mx-auto px-4 py-24 text-center">
-        <h1 className="text-[#0F172A] text-5xl md:text-6xl font-[800] mb-6">
+      <section className="max-w-[1280px] mx-auto px-4 py-24 flex flex-col items-center text-center">
+        <h1 className="text-[#0F172A] text-5xl md:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl">
           Профессиональная дезинсекция в Берлине
         </h1>
-        <p className="text-[#475569] text-xl mb-10 max-w-2xl mx-auto">
-          Быстрое и безопасное избавление от вредителей с гарантией результата.
+        <p className="text-[#475569] text-xl mb-10 max-w-2xl">
+          Быстрое и безопасное избавление от вредителей с гарантией результата. 
+          Используем только сертифицированные Эко-средства.
         </p>
         
-        {/* Кнопка Call-to-Action с твоим цветом #2563EB */}
         <a 
           href="#wizard" 
-          className="inline-block bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-[600] px-8 py-4 rounded-lg shadow-md transition-all active:scale-95"
+          className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-semibold px-8 py-4 rounded-lg shadow-md transition-all active:scale-95"
         >
           Оформить заказ сейчас
         </a>
-      </section>
 
-      {/* Секция для Визарда (заглушка) */}
-      <section id="wizard" className="py-24 bg-[#F8FAFC]">
-        <div className="max-w-[1280px] mx-auto px-4 text-center text-[#475569]">
-          Тут будет твой Визард...
+        {/* Заглушка для Marquee из дока */}
+        <div className="mt-20 w-full border-y border-[#E2E8F0] py-8 overflow-hidden bg-[#F8FAFC]">
+          <p className="text-[#94A3B8] text-sm uppercase tracking-widest font-semibold mb-4">Наши сертификаты</p>
+          <div className="flex justify-center gap-12 opacity-50 grayscale">
+             <span className="font-bold text-2xl">CE</span>
+             <span className="font-bold text-2xl">ISO 9001</span>
+             <span className="font-bold text-2xl">BIO-CERT</span>
+             <span className="font-bold text-2xl">TÜV</span>
+          </div>
         </div>
       </section>
     </main>
